@@ -8,7 +8,7 @@ __irq void Timer0_ISR()
 	else
 		IOCLR1=0XFFFFFFFF;//1<<20;
 	T0IR=0x01;
-	VICVectAddr=0x0000000h;
+	VICVectAddr=0x00000000;
 }
 int main()
 {
